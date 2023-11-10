@@ -47,7 +47,7 @@ Passport is authentication middleware for Node.js. Extremely flexible and modula
 > 
 > iii) Session Handling: Manages user sessions and authentication state.
 >
-## Dependencies Used
+## Dependencies Used For Backend
 
 These are the Dependencies used for this project.
 ```
