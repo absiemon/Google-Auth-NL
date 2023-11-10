@@ -11,7 +11,7 @@ Passport is authentication middleware for Node.js. Extremely flexible and modula
 > 
 > iii) **Description**: Allows users to register with the application by providing a name, email, and password.
 > 
-> iv)** Validation**: Validates the email format and checks for duplicate email addresses.
+> iv) **Validation**: Validates the email format and checks for duplicate email addresses.
 2. #### User Login.
 > i) **Endpoint**: /auth/signin
 > 
