@@ -5,47 +5,47 @@ Passport is authentication middleware for Node.js. Extremely flexible and modula
 
 ## Features:
 1. #### User Registration.
-  > i) Endpoint: /auth/signup
+  > i) **Endpoint**: /auth/signup
 > 
-> ii) Method: POST
+> ii) **Method**: POST
 > 
-> iii) Description: Allows users to register with the application by providing a name, email, and password.
+> iii) **Description**: Allows users to register with the application by providing a name, email, and password.
 > 
-> iv) Validation: Validates the email format and checks for duplicate email addresses.
+> iv)** Validation**: Validates the email format and checks for duplicate email addresses.
 2. #### User Login.
-> i) Endpoint: /auth/signin
+> i) **Endpoint**: /auth/signin
 > 
-> ii) Method: POST
+> ii) **Method**: POST
 >  
-> iii) Description: Enables users to log in using their registered email and password.
+> iii) **Description**: Enables users to log in using their registered email and password.
 > 
 3.  ####  User Profile Retrieval.
-> i) Endpoint: /auth/me
+> i) **Endpoint**: /auth/me
 > 
-> ii) Method: GET
+> ii) **Method**: GET
 > 
-> iii) Description: Retrieves the user profile information based on the provided authentication token.
+> iii) **Description**: Retrieves the user profile information based on the provided authentication token.
 >
 4. ####  Google OAuth2.0 Authentication.
-> i) Endpoint: /auth/google
+> i) **Endpoint**: /auth/google
 > 
-> ii) Method: GET
+> ii) **Method**: GET
 > 
-> iii) Description: Initiates the Google OAuth2.0 authentication process. Redirects the user to Google's authentication page.
+> iii) **Description**: Initiates the Google OAuth2.0 authentication process. Redirects the user to Google's authentication page.
 >
 5. ####  Google OAuth2.0 Callback.
-> i) Endpoint: /auth/google/callback
+> i) **Endpoint**: /auth/google/callback
 >
-> ii) Method: GET
+> ii) **Method**: GET
 >
-> iii) Description: Handles the callback from Google after successful authentication. Stores or retrieves user information from the database.
+> iii) **Description**: Handles the callback from Google after successful authentication. Stores or retrieves user information from the database.
 
 6. #### Frontend Integration
-> i) Framework: React.js
+> i) **Framework**: React.js
 > 
-> ii) Authentication: Integrates with the back-end to provide a seamless user experience for registration, login, and Google authentication.
+> ii) **Authentication**: Integrates with the back-end to provide a seamless user experience for registration, login, and Google authentication.
 > 
-> iii) Session Handling: Manages user sessions and authentication state.
+> iii) **Session Handling**: Manages user sessions and authentication state.
 >
 ## Dependencies Used For Backend
 
