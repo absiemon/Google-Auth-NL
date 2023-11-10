@@ -17,7 +17,7 @@ function App() {
 		try {
 			// Getting the token from the local storage
 			const token = localStorage.getItem("access_token")
-			const url = `https://google-auth-nl.vercel.app/auth/me?token=${token}`;
+			const url = `https://google-auth-nl-api.vercel.app/auth/me?token=${token}`;
 			const { data } = await axios.get(url, { withCredentials: true });
 
 			setUser(data?.content?.data);  // Setting up the user in context

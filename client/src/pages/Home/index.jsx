@@ -8,7 +8,7 @@ function Home(userDetails) {
 	const logout = () => {
 		// If there is a token in locastorage then remove it
 		localStorage.getItem("access_token") && localStorage.removeItem("access_token")
-		window.open(`https://google-auth-nl.vercel.app/auth/logout`, "_self");  // Logging out the user
+		window.open(`https://google-auth-nl-api.vercel.app/auth/logout`, "_self");  // Logging out the user
 	};
 
 	useEffect(()=>{
