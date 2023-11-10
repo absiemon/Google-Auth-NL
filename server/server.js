@@ -48,7 +48,7 @@ app.use(
 ); // Parsing JSON request bodies with limit and parameter limit
 app.use(morgan()); // Enabling request logging with morgan
 
-const allowedOrigins = ["http://localhost:3000", "https://google-auth-nl.vercel.app", "https://google-auth-nl.vercel.app/"];
+const allowedOrigins = ["https://google-auth-client.onrender.com/"];
 const corsOptions = {
   credentials: true, // Allowing credentials, including cookies, in CORS requests
   origin: allowedOrigins, // Defining the allowed origins
