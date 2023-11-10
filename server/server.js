@@ -48,10 +48,10 @@ app.use(
 ); // Parsing JSON request bodies with limit and parameter limit
 app.use(morgan()); // Enabling request logging with morgan
 
-const allowedOrigins = ["https://google-auth-client.onrender.com"];
+const allowedOrigins = ['https://google-auth-client.onrender.com'];
 const corsOptions = {
   credentials: true, // Allowing credentials, including cookies, in CORS requests
-  origin: allowedOrigins, // Defining the allowed origins
+  origin: ['https://google-auth-client.onrender.com'], // Defining the allowed origins
   methods: 'GET, POST, PUT, DELETE', // Specifying HTTP methods
   allowedHeaders: 'Content-Type, Authorization, Cookie', // Defining allowed headers
 };
