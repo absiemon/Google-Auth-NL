@@ -7,6 +7,9 @@ import Signup from "./pages/Signup";
 import "./App.css";
 import { useStateContext } from "./contexts/ContextProvider";
 
+// axios.defaults.baseURL = import.meta.env.REACT_APP_API_BASE_URL;
+axios.defaults.withCredentials = true;
+
 function App() {
 	// Getting the user state from the context
 	const { setUser, user } = useStateContext()
@@ -14,7 +17,7 @@ function App() {
 		try {
 			// Getting the token from the local storage
 			const token = localStorage.getItem("access_token")
-			const url = `http://localhost:8000/auth/me?token=${token}`;
+			const url = `https://google-auth-nl.vercel.app/auth/me?token=${token}`;
 			const { data } = await axios.get(url, { withCredentials: true });
 
 			setUser(data?.content?.data);  // Setting up the user in context

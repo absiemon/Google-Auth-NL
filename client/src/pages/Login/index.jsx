@@ -15,7 +15,7 @@ function Login() {
 
   // Function for login through google 
   const googleAuth = () => {
-    window.open(`http://localhost:8000/auth/google/callback`, "_self");
+    window.open(`https://google-auth-nl.vercel.app/auth/google/callback`, "_self");
   };
 
   // Function for manual login 
@@ -28,7 +28,7 @@ function Login() {
   // start the loading
     setLoading(true);
     axios
-      .post("http://localhost:8000/auth/signin", { email, password })
+      .post("https://google-auth-nl.vercel.app/auth/signin", { email, password })
       .then((res) => {
         setLoading(false);  // stop the loading
         setUser(res.data?.content?.data);  // setting up user in context
