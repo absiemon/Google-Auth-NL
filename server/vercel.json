@@ -8,7 +8,7 @@
     ],
     "routes": [
       {
-        "src": "/auth/me",
+        "src": "/auth/(.*)",
         "dest": "./server.js"
       },
       {
