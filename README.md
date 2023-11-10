@@ -12,13 +12,51 @@ Passport is authentication middleware for Node.js. Extremely flexible and modula
 > iii) **Description**: Allows users to register with the application by providing a name, email, and password.
 > 
 > iv) **Validation**: Validates the email format and checks for duplicate email addresses.
+> 
+> v) **Response**: Demo response
+  ```bash
+    {
+    "status": true,
+    "content": {
+        "data": {
+            "id": "654dc242576fd9b1962e0dc9",
+            "name": "Naman",
+            "email": "naman@test.com",
+            "picture": "https://gravatar.com/avatar/5c9e856d9dfff899009faf44b9bee015?s=400&d=robohash&r=x",
+            "created_at": "2023-11-10T05:40:18.715Z"
+        }
+    },
+    "meta": {
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NGRjMjQyNTc2ZmQ5YjE5NjJlMGRjOSIsIm5hbWUiOiJOYW1hbiIsImVtYWlsIjoibmFtYW5AdGVzdC5jb20iLCJpYXQiOjE2OTk1OTQ4MTgsImV4cCI6MTY5OTY4MTIxOH0.FmU0yFTi_2PZti28qk5y-i-wE65j5THFHckT38bOJsI"
+    }
+}
+  ```
 2. #### User Login.
 > i) **Endpoint**: /auth/signin
 > 
 > ii) **Method**: POST
 >  
 > iii) **Description**: Enables users to log in using their registered email and password.
-> 
+>
+> iv) **Response**: Demo response
+   ```bash
+    {
+    "status": true,
+    "content": {
+        "data": {
+            "id": "654da96d0133058103304236",
+            "name": "Abhay",
+            "email": "abhay@test.com",
+            "picture": "https://gravatar.com/avatar/5c9e856d9dfff899009faf44b9bee015?s=400&d=robohash&r=x",
+            "created_at": "2023-11-10T03:54:21.453Z"
+        }
+    },
+    "meta": {
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NGRhOTZkMDEzMzA1ODEwMzMwNDIzNiIsImVtYWlsIjoiYWJoYXlAdGVzdC5jb20iLCJuYW1lIjoiQWJoYXkiLCJpYXQiOjE2OTk1OTQ5MTQsImV4cCI6MTY5OTY4MTMxNH0.Xpl2tJW7NI67jda4-Ntg1csNwtid5LJ7tQjxZ-r_mN4"
+    }
+}
+   ```
+
 3.  ####  User Profile Retrieval.
 > i) **Endpoint**: /auth/me
 > 
@@ -26,6 +64,21 @@ Passport is authentication middleware for Node.js. Extremely flexible and modula
 > 
 > iii) **Description**: Retrieves the user profile information based on the provided authentication token.
 >
+> iv) **Response**: Demo response
+  ```bash
+    {
+    "status": true,
+    "content": {
+        "data": {
+            "name": "Abhay",
+            "email": "abhay@test.com",
+            "picture": "https://gravatar.com/avatar/5c9e856d9dfff899009faf44b9bee015?s=400&d=robohash&r=x",
+            "created_at": "2023-11-10T03:54:21.453Z"
+        }
+    }
+}
+  ```
+
 4. ####  Google OAuth2.0 Authentication.
 > i) **Endpoint**: /auth/google
 > 
